@@ -1,0 +1,52 @@
+Variáveis 
+Uma variável é um recurso das linguagens de programação
+utilizado para armazenar valores em memória. 
+Assim, sempre que precisarmos desse valor, basta referenciarmos essa variável. 
+Em Java, podemos declarar variáveis, variáveis finais e constantes.
+As variáveis podem ter seu valor modificado a qualquer momento, enquanto as variáveis finais e constantes recebem um valor e não podem ser alteradas.
+
+Caracteristicas de uma variável
+1) um nome;
+2) um tipo;
+3) um tamanho;
+4) valor;
+
+int inteiro
+double fracional
+String texto
+boolean true/false
+
+
+
+Tipos de variáveis
+Existem três tipos de variáveis em java:
+
+Variável local: declarada dentro do corpo de um método é chamada de variável local. Você consegue usar esta variável apenas dentro do método e outro método na classe não terá conhecimento de que essa variável existe.
+Uma variável local não pode ser definida como a palavra reservada "static".
+Variável global:Uma variável declarada dentro da classe mas fora do corpo de um método, é chamada variável global. Não é declarada como como static.
+É chamada variável global porque seu valor é especifico da instancia e não é compartilhado entre instâncias.
+
+Variável estática: Uma variável que é considerada com static é chamada de variável estática. Ela não pode ser local. Você pode criar uma simples cópia de uma variável estática e compartilhar entre todas as instancias na classe. A alocação de memória para variáveis estáticas acontece apenas uma vez enquanto a classe é carregada em memória.
+
+
+Scanner
+A classe Scanner não está disponível por padrão, por isso deve ser adicionada por meio de uma declaração import, que faz referência ao pacote que contém a classe Scanner (no caso, java.util). Para importá-la, usamos o seguinte comando:
+
+import java.util.Scanner;
+Criando um objeto Scanner
+Podemos instanciar um objeto Scanner com a seguinte sintaxe:
+
+Scanner entrada = new Scanner(System.in);
+
+System.out.println() Insere uma nova linha, deixando o marcador posicionado na linha abaixo.
+System.out.print()  Mantém o cursor na mesma linha. Geralmente são utilizadas sequências de escape para pular uma linha.
+printf() Especifica o formato da entrada do tipo de valor, que deve ser o mesmo tipo de dados apontado na instrução. Se possuir alguma dúvida verifique a tabela acima dos tipos de dados que podem ser usados.
+
+\n	Nova linha. Posiciona o cursor de tela no início da próxima linha
+\t	Tabulação horizontal. Move o cursor de tela para a próxima parada de tabulação.
+\r	Posiciona o cursor da tela no início da linha atual - não avança para a próxima linha. Qualquer saída de caracteres gerada depois de algum retorno já gerado é sobrescrito os caracteres anteriores gerados na linha atual.
+\\	Barras invertidas. Utilizada para imprimir um caractere de barra invertida.
+\”	Aspas duplas. Utilizada para imprimir um caractere de aspas duplas. Exemplo, System.out.println(“\”aspas\””); exibe “aspas”
+
+System.out.printf(“%s\n %s\n”, “Marcela”, “Nogueira”);
+
